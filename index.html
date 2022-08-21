@@ -28,29 +28,31 @@
   </head>
   <body>
     <div class="container">
-      <div class="input-group" id="search-form">
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Enter city"
-          aria-label="Recipient's username with two button addons"
-          id="city-input"
-        />
-        <button
-          class="btn btn-outline-secondary"
-          type="button"
-          id="search-button"
-        >
-          Search
-        </button>
-        <button
-          class="btn btn-outline-secondary"
-          type="button"
-          id="current-button"
-        >
-          Current
-        </button>
-      </div>
+      <form class="search-form" id="search-form">
+        <div class="row">
+          <div class="col-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter city"
+              aria-label="Recipient's username with two button addons"
+              id="city-input"
+            />
+          </div>
+          <div class="col-3">
+            <input
+              class="btn btn-outline-secondary"
+              type="submit"
+              value="Search"
+            />
+          </div>
+          <div class="col-3">
+            <button class="btn btn-outline-secondary" id="current-button">
+              Current
+            </button>
+          </div>
+        </div>
+      </form>
       <div class="row">
         <div class="col-6">
           <h1 id="city"></h1>
@@ -112,6 +114,12 @@
         </div>
       </div>
     </div>
+    <p>
+      <a href="https://github.com/igorivnaolga/First-weather-app" id="link">
+        Open source code</a
+      >
+      by Olga Sergiienko
+    </p>
     <script src="src/index.js"></script>
   </body>
 </html>

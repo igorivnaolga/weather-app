@@ -62,3 +62,12 @@ a {
   color: #de9e13;
   font-size: 18px;
 }
+p {
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+a {
+  text-decoration: underline;
+}

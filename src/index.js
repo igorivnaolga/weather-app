@@ -42,8 +42,8 @@ function handleSubmit(event) {
   search(city);
 }
 
-let searchForm = document.querySelector("#search-button");
-searchForm.addEventListener("click", handleSubmit);
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", handleSubmit);
 
 function searchLocation(position) {
   let apiKey = "ff833e479a6ba8688180b478fbf4489b";
